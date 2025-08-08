@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": "200",
+            "name": "SamsoungMobile",
+            "catigoryId": 1,
+            "quntity": 0,
+            "Price": 4000000,
+            "imgUrl": "https://picsum.photos/id/237/100/100"
+        },
+        {
+            "id": "300",
+            "name": "SamsoungTablet",
+            "catigoryId": 2,
+            "quntity": 4,
+            "Price": 80000000,
+            "imgUrl": "https://picsum.photos/id/237/100/100"
+        },
+        {
+            "id": "9314",
+            "name": "the",
+            "Price": 5,
+            "quntity": 555,
+            "catigoryId": "2",
+            "imgUrl": "C:\\fakepath\\Screenshot (1).png"
+        },
+        {
+            "id": "8c8d",
+            "name": "Name",
+            "Price": 5,
+            "quntity": 55,
+            "catigoryId": "3",
+            "imgUrl": "C:\\fakepath\\Screenshot (2).png"
+        },
+        {
+            "id": "6fd9",
+            "name": "asddasdas",
+            "Price": 5,
+            "quntity": 5,
+            "catigoryId": "3",
+            "imgUrl": "C:\\fakepath\\Screenshot 2025-06-18 161647.png"
+        },
+        {
+            "id": "3ebe",
+            "name": "asdasdds",
+            "Price": 78787,
+            "quntity": 8787,
+            "catigoryId": "2",
+            "imgUrl": "C:\\fakepath\\Screenshot 2025-06-18 180223.png"
+        }
+    ]
+}

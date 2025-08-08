@@ -1,0 +1,19 @@
+<div class="container ">
+    <h1>
+        Products
+    </h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div *ngFor="let prd of currentPrds" class="col">
+            <div class="card" style="width: 18rem;">
+                <img [src]="prd.imgUrl" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{prd.name}}</h5>
+                    <p class="card-text">{{prd.quntity}}</p>
+                    <p class="card-text">{{prd.Price}}</p>
+                    <a href="#" class="btn btn-primary" (click)="addToCart(`ValueFromProductComp`)">AddToCart</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
