@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
+import { ICart } from '../../Models/icart';
+import { IOrder } from '../../Models/order';
 
 @Injectable({
   providedIn: 'root'
@@ -7,18 +9,16 @@ import { BehaviorSubject } from 'rxjs';
 export class SharedSer {
 
   //form product to cart
-  private productSource = new BehaviorSubject<string>('');
-  changePrdData(data: string) {
-    this.productSource.next(data);
+  private productSource = new ReplaySubject<ICart>(1);
+  changePrdData(cartVm: ICart) {
+    this.productSource.next(cartVm);
   }
   currentPrdData() {
     return this.productSource.asObservable();
   }
-
   //form cart to order
-
-  private cartSource = new BehaviorSubject<string>('');
-  changeCartData(data: string) {
+  private cartSource = new ReplaySubject<IOrder>(1);
+  changeCartData(data: IOrder) {
     this.cartSource.next(data);
   }
   currentCartData() {

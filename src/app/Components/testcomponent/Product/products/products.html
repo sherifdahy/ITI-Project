@@ -10,10 +10,11 @@
                     <h5 class="card-title">{{prd.name}}</h5>
                     <p class="card-text">{{prd.quntity}}</p>
                     <p class="card-text">{{prd.Price}}</p>
-                    <a href="#" class="btn btn-primary" (click)="addToCart(`ValueFromProductComp`)">AddToCart</a>
+                    <p class="card-text"> <input #quantityInp class="form-control" type="number"></p>
+                    <a class="btn btn-primary"
+                        (click)="addToCart(prd.Price,prd.quntity,quantityInp.value,prd.name)">AddToCart</a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
